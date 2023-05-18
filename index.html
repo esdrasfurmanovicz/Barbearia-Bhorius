@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="É a barbearia perfeita para aqueles que querem inovar no visual, temos serviços para toda a familia!">
     <title>Barbearia Bhorius</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="estilos/imprimir.css" media="print">
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -17,9 +18,9 @@
         <img src="imagens/logo-bhorius.png" alt="">
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Agendar</a></li>
+                <li><a href="index.html" target="_self" rel="prev">Inicio</a></li>
+                <li><a href="sobre.html" target="_self" rel="next">Sobre</a></li>
+                <li><a href="agendar.html" target="_self" rel="next">Agendar</a></li>
                 <li><a href="https://github.com/esdrasfurmanovicz">Contato</a></li>
             </ul>
         </nav>
@@ -46,9 +47,9 @@
         </article>
         <aside>
             <div class="tab">
-                <button class="tabbutton" onclick="openTab(event, 'tab1')">Avaliações</button>
-                <button class="tabbutton" onclick="openTab(event, 'tab2')">Inspire-se</button>
-                <button class="tabbutton" onclick="openTab(event, 'tab3')">Localização</button>
+                <button class="tabbutton" onclick="openTab(event, 'tab1')"><p>Avaliações</p></button>
+                <button class="tabbutton" onclick="openTab(event, 'tab2')"><p>Inspire-se</p></button>
+                <button class="tabbutton" onclick="openTab(event, 'tab3')"><p>Localização</p></button>
               </div>
               
               <div id="tab1" class="tabcontent">

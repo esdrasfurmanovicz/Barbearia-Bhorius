@@ -5,6 +5,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+header{
+  justify-content: space-between;
+}
 article.landing{
     min-height: 120vh;
 }
@@ -22,6 +25,7 @@ article.landing img{
 }
 .sobre p{
   padding: 0px 30px;
+  margin: 0px;
   max-width: 50%;
 }
 button.agendar {
@@ -85,7 +89,9 @@ button.agendar:hover::before {
     left: 100%;
   }
 }
-
+.tabbutton p{
+  font-size: 1.5em;
+}
 .galeria{
   display: grid;
   grid-template-columns: 1fr 1fr;

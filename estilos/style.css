@@ -32,7 +32,7 @@ body{
 }
 p{
   font-size: 1.4em;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 strong{
   color: var(--cor5);
@@ -53,7 +53,7 @@ header{
   background-color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   padding-left: 40px;
@@ -125,11 +125,16 @@ article.landing img{
 }
 .sobre p{
   padding: 0px 20px;
+  margin-top: 20px;
 }
 
 /* Estiliza as abas */
 aside{
-  margin-top: 10vh;
+  margin-top: 15vh;
+}
+.tabbutton p{
+  font-weight: bolder;
+  font-size: 1em;
 }
 .tab {
   display: flex;
@@ -142,7 +147,7 @@ aside{
   border-radius: 10px;
   cursor: pointer;
   padding: 14px 16px;
-  margin: 10px;
+  margin: 5px;
   transition: 0.3s;
   font-size: 17px;
 }
@@ -220,12 +225,16 @@ aside{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 #mapa2, #mapa3{
   display: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  header{
+    justify-content: space-between;
+  }
   article.landing img{
     margin: 0px;
   }
