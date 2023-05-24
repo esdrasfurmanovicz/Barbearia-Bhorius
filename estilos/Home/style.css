@@ -31,6 +31,7 @@ body{
   font-family: var(--font-padrão);
 }
 p{
+  text-indent: 20px;
   font-size: 1.6em;
   line-height: 1.5em;
 }
@@ -205,15 +206,15 @@ aside{
   flex: 1 1;
 }
 .galeria img:nth-child(1){
-  max-width: 98vw;
+  max-width: 95vw;
   width: auto;
 }
 .galeria img{
-  width: 48%;
+  width: 45%;
   padding: 5px;
 }
 .fleximg img{
-  width: 48%;
+  width: 45%;
   padding: 5px;
 }
 .fleximg{
