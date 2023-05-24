@@ -5,6 +5,9 @@
   margin: 0px;
   box-sizing: border-box;
 }
+p{
+  font-size: 1.4em;
+}
 header{
   justify-content: space-between;
 }
@@ -92,6 +95,8 @@ button.agendar:hover::before {
 .tabbutton p{
   font-size: 1.5em;
 }
+
+/* tab 2 */
 .galeria{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -99,18 +104,22 @@ button.agendar:hover::before {
   max-width: 1050px;
   margin: auto;
   gap: 20px;
-
 }
-.galeria img{
-  border-radius: 20px;
+#tab2 img{
+  border-radius: 15px;
   width: auto;
   padding: 0px;
 }
 .galeria img:nth-child(1){
   grid-row: span 3;
 }
+.fleximg{
+  margin-top: 20px;
+  gap: 20px;
+  padding: 0px;
+}
 
-
+/* tab 3 */
 #mapa1, #mapa2{
   display: none;
 }
