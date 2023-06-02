@@ -11,42 +11,7 @@ Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 /* Configurações padrão */
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-:root{
-  --cor1: #55a8f1;
-  --cor2: #2E608C;
-  --cor3: #38485B;
-  --cor4: #0C2240;
-  --cor5: #A60303;
 
-  --font-padrão: 'Sarala', sans-serif;
-  --font-destaque: 'Bebas Neue', sans-serif;
-  --font-avalia: 'Red Hat Display', sans-serif;
-}
-body{
-  font-family: var(--font-padrão);
-}
-p{
-  font-size: 1.4em;
-  line-height: 1.3em;
-}
-strong{
-  color: var(--cor5);
-}
-em{
-  color: var(--cor2);
-  font-style: normal;
-}
-a{
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-radius: 10px;
-}
 
 /* Estilização: cabeçalho */
 header{

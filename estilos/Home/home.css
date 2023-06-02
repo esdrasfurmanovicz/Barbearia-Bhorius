@@ -11,72 +11,7 @@ Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 /* Configurações padrão */
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-:root{
-  --cor1: #55a8f1;
-  --cor2: #2E608C;
-  --cor3: #38485B;
-  --cor4: #0C2240;
-  --cor5: #A60303;
 
-  --font-padrão: 'Sarala', sans-serif;
-  --font-destaque: 'Bebas Neue', sans-serif;
-  --font-avalia: 'Red Hat Display', sans-serif;
-}
-body{
-  font-family: var(--font-padrão);
-}
-p{
-  text-indent: 20px;
-  font-size: 1.6em;
-  line-height: 1.5em;
-}
-strong{
-  color: var(--cor5);
-}
-em{
-  color: var(--cor2);
-  font-style: normal;
-}
-a{
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-/* Estilização: cabeçalho */
-header{
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  padding-left: 40px;
-  border-bottom: 0.4px solid black;
-}
-nav{
-  display: flex;
-  flex-direction: column;
-}
-header ul{
-  display: flex;
-  list-style-type: none;
-  font-size: 1.4em;
-}
-li{padding: 5px;}
-header a:hover{
-  background-color: var(--cor2);
-  color: white;
-  transition: 0.3s;
-  cursor: pointer;
-  transition: 0.5s;
-}
 /* Estilização: main */
 /* Estilização: Landing */
 article.landing{
@@ -264,14 +199,4 @@ aside{
   #mapa2{
     display: block;
   }
-}
-footer{
-  padding: 30px;
-  background-color: #38485B;
-  color: white;
-  text-align: center;
-}
-footer p:nth-child(2){
-  font-size: 0.8em;
-  padding: 5px;
 }
