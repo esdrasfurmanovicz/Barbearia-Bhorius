@@ -14,44 +14,131 @@ Grandes Telas: acima de 1200px
 
 
 /* Estilização: cabeçalho */
-header{
-  background-color: white;
+
+article{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column;
   align-items: center;
-  padding: 10px;
-  padding-left: 40px;
-  border-bottom: 0.4px solid black;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #141e30, #243b55);
 }
-nav{
+.boa{
+  color: white;
+  margin-bottom: 30px;
+}
+.boa h1{
+  text-align: center;
+  margin: 100px 0px 20px 0px;
+  font-size: 3em;
+}
+.agendar {
+  width: 30vw;
+  padding: 40px;
+  margin-bottom: 50px;
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.agendar h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.agendar .user-box {
+  position: relative;
+}
+
+.agendar .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.agendar .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.agendar .user-box input:focus ~ label,
+.agendar .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.quand{
   display: flex;
   flex-direction: column;
-}
-header ul{
-  display: flex;
-  list-style-type: none;
-  font-size: 1.4em;
-}
-li{padding: 5px;}
-header a:hover{
-  background-color: var(--cor2);
+  align-items: center;
+  gap: 5px;
   color: white;
-  transition: 0.3s;
+  padding: 10px;
+}
+.quand label{
+  display: block;
+  text-align: center;
+}
+.quand input{
+  color: white;
+  background-color: rgba(86, 173, 239, 0.351);
+  width: 40%;
+  padding: 7px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #03e9f4;
+}
+.quand input:focus{
+  box-shadow: 0px 0px 20px #03e9f4;
+  border: none;
+  transition: .2s;
+}
+
+.finish{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.finish input{
+  box-shadow: 0px 0px 3px #03e9f4;
+  padding: 10px;
+  background-color: transparent;
+  color: #03e9f4;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 1.5em;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.finish input:nth-child(2){
+  box-shadow: 0px 0px 3px red;
+  color: red;
+}
+.finish input:nth-child(1):hover{
+  background-color: #03e9f4;
+  box-shadow: 0px 0px 15px 6px #03e9f4;
+  color: #141e30;
+  font-weight: bolder;
   transition: 0.5s;
 }
-
-
-
-
-footer{
-    padding: 20px;
-    background-color: #38485B;
-    color: white;
-    text-align: center;
-  }
-  footer p:nth-child(2){
-    font-size: 0.8em;
-    padding: 5px;
-  }
+.finish input:nth-child(2):hover{
+  background-color: rgb(253, 0, 0);
+  box-shadow: 0px 0px 15px 6px rgb(255, 0, 0);
+  color: black;
+  font-weight: bolder;
+  transition: 0.5s;
+}
