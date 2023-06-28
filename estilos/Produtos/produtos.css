@@ -41,13 +41,12 @@ h1{
     border-radius: 10px;
 }
 .prod-item:hover{
-    border: 1px solid aqua;
+    border: 1px solid rgb(0, 116, 116);
     box-shadow: 0px 0px 20px rgba(0, 98, 255, 0.403);
 }
 .prod-item img{
-    width: 100%;
     display: block;
-    margin: auto;
+    margin: 0px auto 20px;
 }
 .cort{
     font-size: 0.9em;
